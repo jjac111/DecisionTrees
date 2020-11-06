@@ -66,7 +66,7 @@ def classify(type='None'):
 
         test_y = test[test.columns[0]]
         metrics[i]['accuracy'] = accuracy_score(test_y, predicted)
-        metrics[i]['precission'] = precision_score(test_y, predicted)
+        metrics[i]['precision'] = precision_score(test_y, predicted)
         metrics[i]['recall'] = recall_score(test_y, predicted)
         metrics[i]['auc'] = auc(test_y, predicted)
 

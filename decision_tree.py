@@ -16,9 +16,12 @@ class Tree:
 
     def fit(self):
         nodes_to_expand = [self.root]
+        minimums = {ft: min(self.train_data[ft]) for ft in self.root.features}
+        maximums = {ft: max(self.train_data[ft]) for ft in self.root.features}
 
         while len(nodes_to_expand) != 0:
             node = nodes_to_expand.pop()
+
             data = node.data
             y_col = data.columns[0]
             targets = np.unique(data[y_col])
@@ -47,23 +50,26 @@ class Tree:
 
             ft = self.select_feature(node.data, y_col, node.features, targets)
 
-            ft_col = data[ft]
-            bins = np.linspace(min(ft_col), max(ft_col), self.branches_per_split + 1)
+            bins = np.linspace(minimums[ft], maximums[ft], self.branches_per_split + 1)
             bins = [(bins[i], bins[i + 1]) for i in range(len(bins) - 1)]
 
             for bin in bins:
                 new_node_data = data[(data[ft] >= bin[0]) & (data[ft] < bin[1])]
 
-                if bin[1] == max(ft_col):
-                    new_node_data.append(data[data[ft] == max(ft_col)])
+                if bin[1] == maximums[ft]:
+                    new_node_data.append(data[data[ft] == maximums[ft]])
 
                 if new_node_data.empty:
                     continue
 
                 new_features = node.features.copy()
                 new_features.remove(ft)
-                condition = lambda x: x >= bin[0] & x < bin[1]
-                new_node = Node(f'F{ft}', parent=node, data=new_node_data, features=new_features, condition=condition)
+
+                def condition(x):
+                    return (x >= bin[0]) & (x < bin[1])
+
+                new_node = Node(f'F{ft} ({round(bin[0], 2)}, {round(bin[1], 2)})', parent=node, data=new_node_data,
+                                features=new_features, condition=condition, feature=ft)
 
                 nodes_to_expand.append(new_node)
 
@@ -71,8 +77,32 @@ class Tree:
         for pre, _, node in RenderTree(self.root):
             print("%s%s" % (pre, node.name))
 
-    def predict(self):
-        pass
+    def predict(self, test):
+
+        predictions = []
+        for i, row in test.iterrows():
+            node = self.root
+            unknown = False
+
+            while not node.is_leaf and not unknown:
+                unknown = True
+
+                for child in node.children:
+                    if child.condition(row[child.feature]):
+                        unknown = False
+                        node = child
+            if node.is_leaf:
+                pred = node.label
+
+            elif unknown:
+                try:
+                    pred = mode([leaf.label for leaf in node.leaves])
+                except StatisticsError as e:
+                    pred = choice(np.unique([leaf.label for leaf in node.leaves]))
+
+            predictions.append(pred)
+
+        return predictions
 
     def select_feature(self, curr, y_col, features, targets):
 

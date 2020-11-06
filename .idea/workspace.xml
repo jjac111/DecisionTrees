@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="815d8f98-1952-4e92-9a7e-658672fad8a9" name="Default Changelist" comment="" />
+    <list default="true" id="815d8f98-1952-4e92-9a7e-658672fad8a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/10_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/10_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/10_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/10_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/1_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/1_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/1_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/1_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/2_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/2_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/2_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/2_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/3_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/3_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/3_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/3_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/4_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/4_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/4_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/4_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/5_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/5_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/5_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/5_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/6_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/6_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/6_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/6_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/7_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/7_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/7_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/7_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/8_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/8_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/8_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/8_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/9_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/9_test.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/10-fold/9_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/9_train.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/preprocess/normalized.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/preprocess/normalized.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/decision_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/decision_tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +40,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jsin2bXFfkLB8w3pg6jR1cGtlV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +52,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -78,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604599362156</updated>
       <workItem from="1604599421908" duration="5421000" />
-      <workItem from="1604605331691" duration="19409000" />
+      <workItem from="1604605331691" duration="24112000" />
     </task>
     <servers />
   </component>
@@ -90,42 +121,46 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="137" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1604599774047" />
+    <state x="560" y="77" key="#xdebugger.evaluate" timestamp="1604636264183">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="560" y="77" key="#xdebugger.evaluate/0.0.1366.738@0.0.1366.738" timestamp="1604636264183" />
     <state x="463" y="126" key="FileChooserDialogImpl" timestamp="1604599629003">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="126" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1604599629003" />
-    <state width="1323" height="568" key="GridCell.Tab.0.bottom" timestamp="1604633777603">
+    <state width="1323" height="296" key="GridCell.Tab.0.bottom" timestamp="1604637733918">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="568" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1604633777603" />
-    <state width="1323" height="568" key="GridCell.Tab.0.center" timestamp="1604633777603">
+    <state width="1323" height="296" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1604637733918" />
+    <state width="1323" height="296" key="GridCell.Tab.0.center" timestamp="1604637733918">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="568" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1604633777603" />
-    <state width="1323" height="568" key="GridCell.Tab.0.left" timestamp="1604633777603">
+    <state width="1323" height="296" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1604637733918" />
+    <state width="1323" height="296" key="GridCell.Tab.0.left" timestamp="1604637733918">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="568" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1604633777603" />
-    <state width="1323" height="568" key="GridCell.Tab.0.right" timestamp="1604633777603">
+    <state width="1323" height="296" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1604637733918" />
+    <state width="1323" height="296" key="GridCell.Tab.0.right" timestamp="1604637733918">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="568" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1604633777603" />
-    <state width="1323" height="568" key="GridCell.Tab.1.bottom" timestamp="1604633777604">
+    <state width="1323" height="296" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1604637733918" />
+    <state width="1323" height="296" key="GridCell.Tab.1.bottom" timestamp="1604637805383">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="568" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1604633777604" />
-    <state width="1323" height="568" key="GridCell.Tab.1.center" timestamp="1604633777604">
+    <state width="1323" height="296" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1604637805383" />
+    <state width="1323" height="296" key="GridCell.Tab.1.center" timestamp="1604637805383">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="568" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1604633777604" />
-    <state width="1323" height="568" key="GridCell.Tab.1.left" timestamp="1604633777603">
+    <state width="1323" height="296" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1604637805383" />
+    <state width="1323" height="296" key="GridCell.Tab.1.left" timestamp="1604637805383">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="568" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1604633777603" />
-    <state width="1323" height="568" key="GridCell.Tab.1.right" timestamp="1604633777604">
+    <state width="1323" height="296" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1604637805383" />
+    <state width="1323" height="296" key="GridCell.Tab.1.right" timestamp="1604637805383">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="568" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1604633777604" />
+    <state width="1323" height="296" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1604637805383" />
     <state x="463" y="176" key="save.file.as.template.dialog" timestamp="1604599805222">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -140,13 +175,28 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utils.py</url>
-          <line>64</line>
-          <option name="timeStamp" value="5" />
+          <line>70</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/DecisionTrees$main.coverage" NAME="main Coverage Results" MODIFIED="1604633693302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DecisionTrees$main.coverage" NAME="main Coverage Results" MODIFIED="1604637733746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

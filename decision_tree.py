@@ -9,6 +9,7 @@ from math import log2
 class Tree:
 
     def __init__(self, train_data, type='CART', branches_per_split=10):
+        assert type is not None
         self.train_data = train_data
         self.type = type
         self.root = Node('root', data=train_data, features=list(train_data.columns)[1:])
@@ -16,8 +17,10 @@ class Tree:
 
     def fit(self):
         nodes_to_expand = [self.root]
-        minimums = {ft: min(self.train_data[ft]) for ft in self.root.features}
-        maximums = {ft: max(self.train_data[ft]) for ft in self.root.features}
+        minimums = {ft: 0 #min(self.train_data[ft])
+                     for ft in self.root.features}
+        maximums = {ft: 1 #max(self.train_data[ft])
+                    for ft in self.root.features}
 
         while len(nodes_to_expand) != 0:
             node = nodes_to_expand.pop()
@@ -65,17 +68,10 @@ class Tree:
                 new_features = node.features.copy()
                 new_features.remove(ft)
 
-                def condition(x):
-                    return (x >= bin[0]) & (x < bin[1])
-
                 new_node = Node(f'F{ft} ({round(bin[0], 2)}, {round(bin[1], 2)})', parent=node, data=new_node_data,
-                                features=new_features, condition=condition, feature=ft)
+                                features=new_features, condition=(bin[0], bin[1]), feature=ft)
 
                 nodes_to_expand.append(new_node)
-
-        print('The fit tree looks like this:')
-        for pre, _, node in RenderTree(self.root):
-            print("%s%s" % (pre, node.name))
 
     def predict(self, test):
 
@@ -88,9 +84,12 @@ class Tree:
                 unknown = True
 
                 for child in node.children:
-                    if child.condition(row[child.feature]):
+                    lower, upper = child.condition
+                    if lower < row[child.feature] <= upper:
                         unknown = False
                         node = child
+                        break
+
             if node.is_leaf:
                 pred = node.label
 
@@ -113,7 +112,7 @@ class Tree:
 
         for ft in features:
             ft_col = curr[ft]
-            bins = np.linspace(min(ft_col), max(ft_col), self.branches_per_split + 1)
+            bins = np.linspace(0, 1, self.branches_per_split + 1)
             bins = [(bins[i], bins[i + 1]) for i in range(len(bins) - 1)]
             binned = [curr[(curr[ft] >= bin[0]) & (curr[ft] < bin[1])] for bin in bins]
             binned[-1].append(curr[curr[ft] == max(ft_col)])
@@ -121,7 +120,7 @@ class Tree:
 
             if self.type == 'ID3' or self.type == 'C4.5':
                 info_ft = -sum([(len(df) / (len(curr))) * (
-                        1 - sum([p * log2(p) for p in [len(df[df[y_col] == t]) / len(df) for t in targets]])) for df in
+                        1 - sum([p * log2(p) if p > 0 else 0 for p in [len(df[df[y_col] == t]) / len(df) for t in targets] ])) for df in
                                 binned])
                 gain = info - info_ft
 
@@ -129,6 +128,8 @@ class Tree:
                     to_append = (ft, gain)
                 elif self.type == 'C4.5':
                     split_info = -sum([(len(df) / len(curr)) * log2(len(df) / len(curr)) for df in binned])
+                    if split_info == 0:
+                        continue
                     to_append = (ft, gain / split_info)
 
             elif self.type == 'CART':
@@ -141,3 +142,8 @@ class Tree:
             measures.append(to_append)
 
         return min(measures, key=lambda x: x[1])[0]
+
+    def plot_tree(self):
+        print('The tree looks like this:')
+        for pre, _, node in RenderTree(self.root):
+            print("%s%s" % (pre, node.name))

@@ -4,6 +4,5 @@ prepare_data()
 
 make_folded_sets()
 
-metrics = classify('CART')
-
-metrics
+metrics = classify('C4.5')
+plot_results(metrics)

@@ -3,30 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="815d8f98-1952-4e92-9a7e-658672fad8a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/10_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/10_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/10_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/10_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/1_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/1_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/1_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/1_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/2_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/2_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/2_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/2_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/3_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/3_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/3_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/3_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/4_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/4_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/4_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/4_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/5_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/5_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/5_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/5_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/6_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/6_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/6_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/6_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/7_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/7_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/7_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/7_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/8_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/8_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/8_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/8_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/9_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/9_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/10-fold/9_train.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/10-fold/9_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/preprocess/normalized.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/preprocess/normalized.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/decision_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/decision_tree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +89,8 @@
       <workItem from="1604599421908" duration="5421000" />
       <workItem from="1604605331691" duration="24112000" />
       <workItem from="1604940287578" duration="20968000" />
+      <workItem from="1605108067821" duration="715000" />
+      <workItem from="1605109449349" duration="303000" />
     </task>
     <servers />
   </component>
@@ -131,10 +110,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="914" height="466" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1604964234488" />
-    <state x="463" y="126" key="FileChooserDialogImpl" timestamp="1604599629003">
+    <state x="463" y="126" key="FileChooserDialogImpl" timestamp="1605108147767">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="126" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1604599629003" />
+    <state x="463" y="126" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1605108147767" />
     <state width="1323" height="226" key="GridCell.Tab.0.bottom" timestamp="1605052766266">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
